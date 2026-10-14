@@ -3,11 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Calculadora gratuita para estimar cuotas mensuales de mantenimiento de automatizaciones n8n, Make y Zapier.">
-<title>Cuota Clara — mantenimiento de automatizaciones</title>
+<meta name="description" content="Calcula cuánto cobrar por el mantenimiento mensual de automatizaciones n8n, Make y Zapier. Estima horas, incidencias, margen y alcance del soporte. Gratis y sin registro.">
+<meta name="keywords" content="calculadora mantenimiento n8n, cuánto cobrar mantenimiento automatizaciones, precio mantenimiento n8n, cuota soporte automatizaciones, calculadora n8n">
+<meta name="theme-color" content="#142b49">
+<link rel="canonical" href="https://estaccato3.github.io/cuota-clara/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Calculadora de mantenimiento de automatizaciones | Cuota Clara">
+<meta property="og:description" content="Estima horas, incidencias, margen y una cuota mensual orientativa para mantener automatizaciones.">
+<meta property="og:url" content="https://estaccato3.github.io/cuota-clara/">
+<meta name="twitter:card" content="summary">
+<title>Calculadora de mantenimiento de n8n y automatizaciones | Cuota Clara</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Cuota Clara",
+  "url": "https://estaccato3.github.io/cuota-clara/",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "es-MX",
+  "isAccessibleForFree": true,
+  "description": "Calculadora gratuita para estimar la cuota mensual de mantenimiento de automatizaciones, contemplando horas, incidencias, reserva, costos y margen."
+}
+</script>
 <style>
 :root{--ink:#15243a;--muted:#617087;--line:#dbe4ee;--paper:#f3f7fb;--blue:#215da8;--cyan:#12a4b4;--card:#fff;--pale:#eaf5fb}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}header{background:linear-gradient(120deg,#142b49,#1d5790 70%,#138f9f);color:white;padding:42px 20px 64px}.wrap{max-width:1100px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-weight:800;font-size:.76rem;opacity:.84}h1{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.12;max-width:780px;margin:12px 0}header p{max-width:730px;color:#e0ebf8;margin:0;font-size:1.05rem}.pill{display:inline-block;border:1px solid #ffffff66;border-radius:999px;padding:6px 11px;font-size:.82rem;margin-top:18px}main{max-width:1100px;margin:-30px auto 45px;padding:0 16px}.layout{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 30px #132a4a12;padding:22px}.card h2{font-size:1.2rem;margin:0 0 6px}.sub{font-size:.9rem;color:var(--muted);margin:0 0 17px}.section{border-top:1px solid var(--line);padding-top:16px;margin-top:14px}.section h3{font-size:.86rem;text-transform:uppercase;letter-spacing:.07em;color:#40536d;margin:0 0 12px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field label{display:block;font-size:.85rem;font-weight:700;margin-bottom:6px}.field input,.field select{width:100%;padding:10px;border:1px solid #cbd6e2;border-radius:9px;font:inherit;background:white;color:var(--ink)}.field small{display:block;color:var(--muted);font-size:.75rem;margin-top:5px}.suffix{position:relative}.suffix input{padding-right:48px}.suffix span{position:absolute;right:10px;top:10px;color:var(--muted);font-size:.82rem}.full{grid-column:1/-1}.note{background:var(--pale);border:1px solid #cfe1f2;border-radius:11px;padding:12px;font-size:.84rem;margin-top:15px}.results{position:sticky;top:15px}.pricebox{border:1px solid #c5e3e9;border-radius:15px;background:linear-gradient(140deg,#eff8ff,#effbfa);padding:20px}.label{font-size:.83rem;font-weight:700;color:#40536d}.price{font-size:clamp(2.1rem,4.5vw,3rem);font-weight:850;line-height:1.2;color:#164b79;margin:8px 0}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.metric,.line{border-bottom:1px solid #edf1f5;padding:9px 0}.metric{border:1px solid var(--line);border-radius:11px;padding:12px}.metric span{display:block;color:var(--muted);font-size:.77rem}.metric strong{display:block;font-size:1.15rem;margin-top:4px}.status{margin-top:12px;border-radius:10px;padding:11px;font-size:.84rem;background:#fff4df;color:#8a5207}.status.good{background:#e8f7ef;color:#13795b}.breakdown{margin-top:19px}.breakdown h3,.scope h3{font-size:.9rem;margin:0 0 8px}.line{display:flex;justify-content:space-between;gap:12px;font-size:.85rem}.line span{color:var(--muted)}.line strong{text-align:right}.scope{margin-top:18px}.scope textarea{width:100%;min-height:160px;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit;font-size:.82rem;resize:vertical}.buttons{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}.btn{border:0;border-radius:9px;padding:10px 13px;background:var(--blue);color:white;font-weight:750;cursor:pointer}.btn.secondary{background:white;color:var(--blue);border:1px solid #cbd6e2}.micro{font-size:.77rem;color:var(--muted)}footer{max-width:1100px;margin:auto;padding:0 16px 32px;color:var(--muted);font-size:.79rem}.foot{border-top:1px solid var(--line);padding-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:780px){.layout{grid-template-columns:1fr}.results{position:static}}@media(max-width:490px){.fields,.metrics,.foot{grid-template-columns:1fr}.card{padding:17px}header{padding:30px 18px 52px}}
+.seo-section{max-width:1100px;margin:26px auto 0;padding:25px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 30px #132a4a0b}
+.seo-section h2{font-size:1.45rem;margin:0 0 12px}.seo-section p{max-width:850px;color:#42526a}.seo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}.seo-item{padding:14px;border:1px solid var(--line);border-radius:12px}.seo-item strong{display:block;margin-bottom:5px}.seo-item p{font-size:.9rem;margin:0}.text-link{color:var(--blue);font-weight:750;text-decoration-thickness:1px;text-underline-offset:3px}
+@media(max-width:700px){.seo-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -43,6 +68,17 @@
 <div class="scope"><h3>Borrador de alcance mensual</h3><textarea id="scopeText" aria-label="Borrador editable del alcance"></textarea><div class="buttons"><button class="btn" id="copyBtn" type="button">Copiar alcance</button><button class="btn secondary" id="downloadBtn" type="button">Descargar resumen .txt</button></div><p class="micro" id="copyStatus" aria-live="polite">Edita el texto y revísalo antes de incluirlo en una propuesta o contrato.</p></div>
 <p class="micro">Prototipo para planificación; no constituye asesoría fiscal, legal ni garantía comercial.</p>
 </section></div></main>
+<section class="seo-section" aria-labelledby="guia-mantenimiento">
+<h2 id="guia-mantenimiento">Cómo calcular cuánto cobrar por mantener automatizaciones</h2>
+<p>Una cuota mensual no debería depender únicamente del número de flujos. También importa cuánto tiempo requiere revisar las ejecuciones, resolver incidencias, actualizar integraciones, coordinar cambios y responder cuando algo deja de funcionar. Cuota Clara convierte esos supuestos en una estimación que puedes revisar antes de preparar una propuesta.</p>
+<div class="seo-grid">
+<div class="seo-item"><strong>1. Estima las horas reales</strong><p>Separa tareas rutinarias, incidencias esperadas y coordinación con el cliente. Usa tu historial si ya tienes flujos en producción.</p></div>
+<div class="seo-item"><strong>2. Define costo y margen</strong><p>Incluye tu costo interno por hora y el margen bruto objetivo. No confundas margen con recargo sobre el costo.</p></div>
+<div class="seo-item"><strong>3. Delimita el soporte</strong><p>Especifica horas incluidas, horario de atención, respuesta a incidentes y qué trabajos se cotizan aparte.</p></div>
+</div>
+<p>Los valores de ejemplo de la calculadora no son tarifas de mercado. Ajusta todos los campos a tu operación y considera por separado el hosting, las licencias, el consumo de APIs y cualquier guardia o nivel de servicio especial.</p>
+<p><a class="text-link" href="guia-mantenimiento-n8n.html">Lee la guía: cómo calcular una cuota mensual de mantenimiento de n8n →</a></p>
+</section>
 <footer><div class="foot"><div><strong>Privacidad</strong><br>Esta versión no hace solicitudes a internet, no guarda tus entradas en un servidor y no necesita claves API. Los cálculos ocurren en el navegador.</div><div><strong>Estado del producto</strong><br>Prototipo experimental. Los supuestos iniciales deben contrastarse con horas y costos reales antes de cotizar.</div></div></footer>
 <script>
 (function(){
