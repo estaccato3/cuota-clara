@@ -14,7 +14,7 @@ Calculadora gratuita en español para estimar una cuota mensual de mantenimiento
 
 ## Uso
 
-Abre [Cuota Clara](https://estaccato3.github.io/cuota-clara/) en un navegador moderno. También puedes descargar `index.html` y abrirlo localmente; no requiere instalación, dependencias ni servidor.
+Abre [Cuota Clara](https://estaccato3.github.io/cuota-clara/) en un navegador moderno. Para explicar cómo se calcula una cuota, consulta la [guía de mantenimiento de n8n](https://estaccato3.github.io/cuota-clara/guia-mantenimiento-n8n.html). También puedes descargar `index.html` y abrirlo localmente; no requiere instalación, dependencias ni servidor.
 
 ## Privacidad
 
@@ -33,6 +33,10 @@ El resultado es una ayuda para planificar, no una garantía de rentabilidad ni u
 ## Publicación en GitHub Pages
 
 El workflow [pages.yml](.github/workflows/pages.yml) despliega el sitio cuando hay cambios en `main` y también puede ejecutarse manualmente. En el repositorio, ve a **Settings → Pages** y selecciona **GitHub Actions** como fuente de despliegue si todavía no está configurada.
+
+## Descubrimiento orgánico
+
+El proyecto incluye un [sitemap XML](sitemap.xml) y un [robots.txt](robots.txt). Estos archivos ayudan a los rastreadores a descubrir las dos páginas públicas, pero no garantizan que los buscadores las indexen o les envíen visitas. Para medir impresiones, clics y consultas, verifica la propiedad `https://estaccato3.github.io/` (o la propiedad de URL correspondiente) en [Google Search Console](https://search.google.com/search-console/about) y envía `sitemap.xml`. Revisa luego el informe de rendimiento; evita interpretar la ausencia de datos iniciales como prueba definitiva de que no existe demanda.
 
 ## Próximas validaciones
 
