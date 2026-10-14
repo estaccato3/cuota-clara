@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Aprende a calcular una cuota mensual de mantenimiento de n8n: horas, incidencias, reserva, margen, SLA y alcance del soporte. Incluye un ejemplo editable.">
+<meta name="theme-color" content="#142b49">
+<link rel="canonical" href="https://estaccato3.github.io/cuota-clara/guia-mantenimiento-n8n.html">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Cuánto cobrar por el mantenimiento de n8n | Cuota Clara">
+<meta property="og:description" content="Un método transparente para estimar horas, costes, margen y límites del mantenimiento mensual de automatizaciones.">
+<meta property="og:url" content="https://estaccato3.github.io/cuota-clara/guia-mantenimiento-n8n.html">
+<title>Cuánto cobrar por el mantenimiento de n8n | Cuota Clara</title>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Article",
+ "headline":"Cuánto cobrar por el mantenimiento de n8n: cómo calcular una cuota mensual",
+ "inLanguage":"es-MX",
+ "mainEntityOfPage":"https://estaccato3.github.io/cuota-clara/guia-mantenimiento-n8n.html",
+ "author":{"@type":"Organization","name":"Cuota Clara"},
+ "publisher":{"@type":"Organization","name":"Cuota Clara"},
+ "datePublished":"2026-10-14",
+ "dateModified":"2026-10-14"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {"@type":"Question","name":"¿Cuánto debo cobrar al mes por mantener un flujo de n8n?","acceptedAnswer":{"@type":"Answer","text":"No hay una tarifa universal. Estima las horas de revisión e incidencias, aplica tu coste interno y margen objetivo, y define qué soporte está incluido. El número de flujos por sí solo no predice el trabajo."}},
+  {"@type":"Question","name":"¿Qué debe incluir un contrato de mantenimiento de automatizaciones?","acceptedAnswer":{"@type":"Answer","text":"Define flujos cubiertos, mantenimiento preventivo, horas incluidas, canales y horario de soporte, tiempo de respuesta por severidad, trabajo fuera de alcance, costes de terceros y cómo se autorizan horas extra."}},
+  {"@type":"Question","name":"¿La cuota mensual debe incluir hosting y consumo de APIs?","acceptedAnswer":{"@type":"Answer","text":"Depende del acuerdo. Conviene separar las licencias, hosting, consumo de APIs y servicios externos para que sean visibles y no se cuenten dos veces."}},
+  {"@type":"Question","name":"¿Cómo calculo el margen bruto?","acceptedAnswer":{"@type":"Answer","text":"Precio objetivo = coste directo dividido entre uno menos el margen bruto deseado. Para un margen del 40 por ciento, divide el coste entre 0.60. Esto es distinto de añadir un recargo del 40 por ciento al coste."}}
+ ]
+}
+</script>
+<style>
+:root{--ink:#15243a;--muted:#617087;--line:#dbe4ee;--paper:#f3f7fb;--blue:#215da8;--cyan:#12a4b4;--card:#fff;--pale:#eaf5fb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.72 system-ui,-apple-system,"Segoe UI",sans-serif}.hero{background:linear-gradient(120deg,#142b49,#1d5790 70%,#138f9f);color:white;padding:38px 20px 45px}.wrap{max-width:880px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:800;opacity:.85}.hero h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.12;letter-spacing:-.03em;margin:12px 0}.hero p{max-width:750px;color:#e1edf8;font-size:1.07rem;margin:0}.pill{display:inline-block;border:1px solid #ffffff66;border-radius:999px;padding:5px 10px;font-size:.8rem;margin-top:17px}.back{display:inline-block;margin-bottom:20px;color:white;font-weight:750;text-decoration:none}.back:hover{text-decoration:underline}main{max-width:880px;margin:24px auto 42px;padding:0 16px}.article{background:white;border:1px solid var(--line);border-radius:17px;padding:clamp(20px,4vw,42px);box-shadow:0 12px 30px #132a4a0b}.lead{font-size:1.15rem;color:#364b65}.note{border-left:4px solid var(--cyan);background:var(--pale);padding:13px 16px;margin:20px 0;border-radius:0 10px 10px 0;font-size:.94rem}.article h2{font-size:1.55rem;line-height:1.25;margin:35px 0 10px}.article h3{font-size:1.12rem;margin:22px 0 6px}.article p{margin:10px 0}.article li{margin:6px 0}.article a{color:var(--blue);text-underline-offset:3px}.formula{background:#132b47;color:#fff;border-radius:12px;padding:17px;margin:17px 0;font-weight:750;font-size:1.02rem;overflow-wrap:anywhere}.table-wrap{overflow-x:auto;margin:15px 0}table{border-collapse:collapse;width:100%;font-size:.94rem}th,td{text-align:left;padding:10px 11px;border-bottom:1px solid var(--line)}th{background:#f0f5fa}td:last-child{text-align:right;font-variant-numeric:tabular-nums}.cta{margin:25px 0;padding:23px;background:linear-gradient(135deg,#eaf5fb,#effbfa);border:1px solid #cde3ee;border-radius:13px}.btn{display:inline-block;margin-top:8px;background:var(--blue);color:white!important;text-decoration:none;font-weight:800;border-radius:9px;padding:11px 15px}.muted{color:var(--muted);font-size:.88rem}.faq{border-top:1px solid var(--line);padding:13px 0}.faq h3{margin:0 0 5px}.faq p{margin:0}footer{max-width:880px;margin:auto;padding:0 16px 30px;color:var(--muted);font-size:.8rem}@media(max-width:500px){body{font-size:16px}.hero{padding:28px 18px 36px}.article{padding:19px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<a class="back" href="./">← Volver a Cuota Clara</a>
+<div class="eyebrow">Guía práctica · Freelancers y pequeñas agencias</div>
+<h1>¿Cuánto cobrar por el mantenimiento de n8n y otras automatizaciones?</h1>
+<p>Un método para estimar horas, incidencias, margen y límites del soporte antes de proponer una cuota mensual.</p>
+<span class="pill">Ejemplos ilustrativos · Actualizada el 14 de octubre de 2026</span>
+</div></header>
+<main><article class="article">
+<p class="lead">El mantenimiento de una automatización no consiste únicamente en comprobar que sigue encendida. Puede implicar revisar ejecuciones, corregir errores, actualizar credenciales o integraciones, responder consultas y adaptar flujos cuando cambia un sistema externo.</p>
+<p>Por eso, un precio mensual basado solo en el número de flujos puede fallar: dos automatizaciones pueden tener volúmenes, dependencias y consecuencias de error muy diferentes. Este método te ayuda a construir una estimación explícita que después debes contrastar con tus datos reales.</p>
+<div class="note"><strong>Transparencia:</strong> los números de este artículo son ejemplos matemáticos, no tarifas promedio del mercado ni una promesa de que el cliente aceptará ese precio. Ajusta los supuestos a tu operación, país, experiencia y nivel de servicio.</div>
+
+<h2>1. Separa las horas por tipo de trabajo</h2>
+<p>Empieza con cuatro categorías para no subestimar el mantenimiento:</p>
+<ul>
+<li><strong>Revisión rutinaria:</strong> comprobar ejecuciones, alertas, registros y salud de integraciones.</li>
+<li><strong>Incidencias:</strong> diagnosticar y corregir fallos esperados. Estima frecuencia y duración con tus datos históricos cuando existan.</li>
+<li><strong>Coordinación:</strong> reuniones, reportes, mensajes, despliegues y gestión de cambios.</li>
+<li><strong>Reserva para imprevistos:</strong> un colchón explícito para la variabilidad. No reemplaza un límite de alcance ni garantiza cubrir incidentes extraordinarios.</li>
+</ul>
+<p>En n8n, por ejemplo, el historial de ejecuciones permite revisar ejecuciones y filtrar por estado; consulta la <a href="https://docs.n8n.io/workflows/executions/all-executions/" rel="noopener">documentación oficial de ejecuciones de n8n</a> para conocer las funciones disponibles. No necesitas incluir cada tarea imaginable en el plan: decide cuáles tienen sentido para los flujos concretos de tu cliente.</p>
+
+<h2>2. Calcula las horas mensuales estimadas</h2>
+<div class="formula">Horas con reserva = (horas rutinarias + horas de incidencias + coordinación) × (1 + reserva)</div>
+<p>Ejemplo hipotético para cuatro flujos en producción:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Componente</th><th>Supuesto ilustrativo</th><th>Horas/mes</th></tr></thead>
+<tbody>
+<tr><td>Revisión rutinaria</td><td>4 flujos × 0.5 h</td><td>2.0</td></tr>
+<tr><td>Incidencias</td><td>2 incidentes × 1.5 h</td><td>3.0</td></tr>
+<tr><td>Coordinación y reporte</td><td>Estimación</td><td>1.0</td></tr>
+<tr><td>Subtotal</td><td>Antes de reserva</td><td>6.0</td></tr>
+<tr><td>Reserva de imprevistos</td><td>25% del subtotal</td><td>1.5</td></tr>
+<tr><td><strong>Total estimado</strong><td>6.0 h × 1.25</td><td><strong>7.5</strong></td></tr>
+</tbody></table></div>
+<p>Estos valores no representan una recomendación universal. Una automatización estable puede necesitar menos atención; un flujo crítico que depende de terceros puede necesitar mucho más. Registra el tiempo real y revisa el cálculo tras uno o dos ciclos de facturación.</p>
+
+<h2>3. Pasa de las horas al precio</h2>
+<p>Estima primero tu <strong>costo interno por hora</strong>. No es necesariamente lo que cobras al cliente: debe reflejar el costo del trabajo, incluyendo el tiempo que realmente destinas a prestar el servicio.</p>
+<div class="formula">Precio por trabajo = costo laboral ÷ (1 − margen bruto objetivo)</div>
+<p>Por ejemplo, si las 7.5 horas previstas se calculan a un costo interno de MXN $400/h, el costo laboral estimado sería MXN $3,000. Con un margen bruto objetivo del 40%, el precio laboral objetivo sería $3,000 ÷ 0.60 = <strong>MXN $5,000</strong>.</p>
+<p>Es importante distinguir <em>margen</em> de <em>recargo sobre el costo</em>. Si simplemente multiplicaras $3,000 por 1.4, obtendrías $4,200, que no produce un margen bruto del 40% sobre ese precio.</p>
+<div class="note">En el ejemplo anterior no hay un precio de mercado implicado. Los MXN $400/h, el 40% de margen y las horas supuestas son entradas de ejemplo para mostrar la fórmula.</div>
+
+<h2>4. Separa los costos externos y los niveles de servicio</h2>
+<p>Decide claramente cómo facturarás cada concepto:</p>
+<ul>
+<li><strong>Licencias, hosting y APIs:</strong> se pueden trasladar al cliente por separado o incluirse en una cuota, pero documenta qué opción escogiste y evita contarlos dos veces.</li>
+<li><strong>Disponibilidad prioritaria o SLA:</strong> cobra por ella solo si puedes definir y cumplir el horario, la severidad y los tiempos de respuesta acordados.</li>
+<li><strong>Horas extra:</strong> fija una tarifa y un proceso de autorización antes de superar las horas incluidas.</li>
+<li><strong>Desarrollo nuevo:</strong> una función nueva, migración o cambio de alcance puede requerir una cotización independiente.</li>
+</ul>
+
+<h2>5. Define el alcance antes de enviar una propuesta</h2>
+<p>Una cuota recurrente es más fácil de administrar cuando el cliente sabe qué compra. Deja por escrito:</p>
+<ul>
+<li>Qué flujos y entornos están cubiertos.</li>
+<li>Cuántas horas incluye el plan y cómo se reportan.</li>
+<li>Horario y canal de soporte, severidad de incidentes y tiempos de respuesta.</li>
+<li>Qué se considera mantenimiento, qué es un cambio nuevo y qué queda fuera de alcance.</li>
+<li>Cómo se autorizan gastos externos y horas adicionales.</li>
+</ul>
+<p>No prometas atención inmediata o disponibilidad permanente si no tienes capacidad para cumplirla. Una cuota mensual no equivale automáticamente a una guardia 24/7.</p>
+
+<div class="cta">
+<h2 style="margin-top:0">Haz el cálculo con tus propios supuestos</h2>
+<p>Introduce tus flujos, horas, incidencias, costo interno y margen. La calculadora genera una estimación y un borrador de alcance que puedes editar antes de usar.</p>
+<a class="btn" href="./">Abrir la calculadora gratuita →</a>
+<p class="muted">Funciona en tu navegador, sin cuenta ni claves API.</p>
+</div>
+
+<h2>Preguntas frecuentes</h2>
+<div class="faq"><h3>¿Cuánto debo cobrar por mantener un flujo de n8n?</h3><p>No hay una tarifa universal. Depende del tiempo de trabajo, la criticidad, el volumen de incidencias, el alcance y el nivel de soporte acordado. El número de flujos es solo una de las variables.</p></div>
+<div class="faq"><h3>¿La cuota debería incluir hosting y consumo de APIs?</h3><p>Depende del acuerdo. Mostrar los costos por separado suele facilitar la transparencia; si los incluyes en la cuota, estima su variabilidad y evita cobrarlos dos veces.</p></div>
+<div class="faq"><h3>¿Qué hago si las incidencias consumen más horas de lo previsto?</h3><p>Revisa el historial, recalibra frecuencia y duración, y negocia un cambio de alcance si hace falta. Define desde el principio cómo se autorizan y cobran las horas adicionales.</p></div>
+<div class="faq"><h3>¿Cuota Clara recomienda una tarifa de mercado?</h3><p>No. La herramienta aplica las entradas que tú proporcionas para calcular un precio orientativo. Sus resultados no están basados en una encuesta de tarifas del mercado.</p></div>
+
+<h2>Resumen</h2>
+<p>Una cuota sostenible parte de las horas reales, añade una reserva razonable, cubre el costo interno y el margen deseado, y separa los gastos externos. Después necesita límites claros de soporte. Usa la calculadora como punto de partida, registra tus horas reales y ajusta las estimaciones con evidencia, no con supuestos que nunca revisas.</p>
+<p class="muted">Este contenido es educativo y no constituye asesoría fiscal, legal, financiera ni garantía de rentabilidad.</p>
+</article></main>
+<footer>Cuota Clara · <a href="./">Calculadora</a> · Proyecto experimental; no hemos validado aún ingresos ni precios de mercado.</footer>
+</body></html>
