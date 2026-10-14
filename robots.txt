@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://estaccato3.github.io/cuota-clara/sitemap.xml
