@@ -1,1 +1,94 @@
-<!-- placeholder -->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Calculadora gratuita para estimar cuotas mensuales de mantenimiento de automatizaciones n8n, Make y Zapier.">
+<title>Cuota Clara — mantenimiento de automatizaciones</title>
+<style>
+:root{--ink:#15243a;--muted:#617087;--line:#dbe4ee;--paper:#f3f7fb;--blue:#215da8;--cyan:#12a4b4;--card:#fff;--pale:#eaf5fb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}header{background:linear-gradient(120deg,#142b49,#1d5790 70%,#138f9f);color:white;padding:42px 20px 64px}.wrap{max-width:1100px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-weight:800;font-size:.76rem;opacity:.84}h1{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.12;max-width:780px;margin:12px 0}header p{max-width:730px;color:#e0ebf8;margin:0;font-size:1.05rem}.pill{display:inline-block;border:1px solid #ffffff66;border-radius:999px;padding:6px 11px;font-size:.82rem;margin-top:18px}main{max-width:1100px;margin:-30px auto 45px;padding:0 16px}.layout{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 30px #132a4a12;padding:22px}.card h2{font-size:1.2rem;margin:0 0 6px}.sub{font-size:.9rem;color:var(--muted);margin:0 0 17px}.section{border-top:1px solid var(--line);padding-top:16px;margin-top:14px}.section h3{font-size:.86rem;text-transform:uppercase;letter-spacing:.07em;color:#40536d;margin:0 0 12px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field label{display:block;font-size:.85rem;font-weight:700;margin-bottom:6px}.field input,.field select{width:100%;padding:10px;border:1px solid #cbd6e2;border-radius:9px;font:inherit;background:white;color:var(--ink)}.field small{display:block;color:var(--muted);font-size:.75rem;margin-top:5px}.suffix{position:relative}.suffix input{padding-right:48px}.suffix span{position:absolute;right:10px;top:10px;color:var(--muted);font-size:.82rem}.full{grid-column:1/-1}.note{background:var(--pale);border:1px solid #cfe1f2;border-radius:11px;padding:12px;font-size:.84rem;margin-top:15px}.results{position:sticky;top:15px}.pricebox{border:1px solid #c5e3e9;border-radius:15px;background:linear-gradient(140deg,#eff8ff,#effbfa);padding:20px}.label{font-size:.83rem;font-weight:700;color:#40536d}.price{font-size:clamp(2.1rem,4.5vw,3rem);font-weight:850;line-height:1.2;color:#164b79;margin:8px 0}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.metric,.line{border-bottom:1px solid #edf1f5;padding:9px 0}.metric{border:1px solid var(--line);border-radius:11px;padding:12px}.metric span{display:block;color:var(--muted);font-size:.77rem}.metric strong{display:block;font-size:1.15rem;margin-top:4px}.status{margin-top:12px;border-radius:10px;padding:11px;font-size:.84rem;background:#fff4df;color:#8a5207}.status.good{background:#e8f7ef;color:#13795b}.breakdown{margin-top:19px}.breakdown h3,.scope h3{font-size:.9rem;margin:0 0 8px}.line{display:flex;justify-content:space-between;gap:12px;font-size:.85rem}.line span{color:var(--muted)}.line strong{text-align:right}.scope{margin-top:18px}.scope textarea{width:100%;min-height:160px;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit;font-size:.82rem;resize:vertical}.buttons{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}.btn{border:0;border-radius:9px;padding:10px 13px;background:var(--blue);color:white;font-weight:750;cursor:pointer}.btn.secondary{background:white;color:var(--blue);border:1px solid #cbd6e2}.micro{font-size:.77rem;color:var(--muted)}footer{max-width:1100px;margin:auto;padding:0 16px 32px;color:var(--muted);font-size:.79rem}.foot{border-top:1px solid var(--line);padding-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:780px){.layout{grid-template-columns:1fr}.results{position:static}}@media(max-width:490px){.fields,.metrics,.foot{grid-template-columns:1fr}.card{padding:17px}header{padding:30px 18px 52px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="eyebrow">Herramienta gratuita · MVP experimental</div><h1>¿Cuánto deberías cobrar por mantener automatizaciones?</h1><p>Estima las horas reales, considera incidencias y separa el mantenimiento ordinario de la disponibilidad prioritaria. Para freelancers y pequeñas agencias que trabajan con n8n, Make o Zapier.</p><span class="pill">Funciona en tu navegador · No envía datos</span></div></header>
+<main><div class="layout">
+<section class="card"><h2>Configura tu servicio</h2><p class="sub">Cambia los supuestos por tus propios datos. Los valores iniciales solo son un ejemplo, no una recomendación de mercado.</p>
+<div class="section"><h3>Volumen de mantenimiento</h3><div class="fields">
+<div class="field"><label for="flows">Flujos en producción</label><input id="flows" type="number" min="0" max="1000" step="1" value="3"></div>
+<div class="field"><label for="routine">Horas rutinarias por flujo / mes</label><input id="routine" type="number" min="0" max="500" step=".25" value=".5"><small>Revisión, pequeñas actualizaciones y comprobaciones.</small></div>
+<div class="field"><label for="incidents">Incidencias esperadas / mes</label><input id="incidents" type="number" min="0" max="500" step=".5" value="2"></div>
+<div class="field"><label for="incidentHours">Horas promedio por incidencia</label><input id="incidentHours" type="number" min="0" max="500" step=".25" value="1.5"></div>
+<div class="field"><label for="admin">Coordinación y reporte (h/mes)</label><input id="admin" type="number" min="0" max="500" step=".25" value=".75"></div>
+<div class="field"><label for="buffer">Reserva para imprevistos</label><div class="suffix"><input id="buffer" type="number" min="0" max="200" step="5" value="25"><span>%</span></div></div>
+</div></div>
+<div class="section"><h3>Costo y precio</h3><div class="fields">
+<div class="field"><label for="hourCost">Costo interno por hora</label><div class="suffix"><input id="hourCost" type="number" min="0" step="50" value="350"><span class="currency">MXN</span></div></div>
+<div class="field"><label for="margin">Margen bruto objetivo</label><div class="suffix"><input id="margin" type="number" min="0" max="90" step="5" value="40"><span>%</span></div></div>
+<div class="field"><label for="tools">Licencias e infraestructura a trasladar</label><div class="suffix"><input id="tools" type="number" min="0" step="50" value="0"><span class="currency">MXN</span></div><small>Costos que se facturan por separado.</small></div>
+<div class="field"><label for="oncall">Disponibilidad prioritaria / SLA</label><div class="suffix"><input id="oncall" type="number" min="0" step="50" value="0"><span class="currency">MXN</span></div><small>Opcional, solo si ofreces ese servicio.</small></div>
+<div class="field"><label for="included">Horas incluidas en el plan</label><input id="included" type="number" min="0" step=".5" value="5"></div>
+<div class="field"><label for="overage">Precio por hora extra</label><div class="suffix"><input id="overage" type="number" min="0" step="50" value="700"><span class="currency">MXN</span></div></div>
+<div class="field full"><label for="currencySelect">Moneda</label><select id="currencySelect"><option value="MXN">MXN · Pesos mexicanos</option><option value="USD">USD · Dólares estadounidenses</option><option value="EUR">EUR · Euros</option></select></div>
+</div></div>
+<div class="note"><strong>Importante:</strong> la estimación depende de las horas y costos que introduzcas. No incluye impuestos ni garantiza que un cliente acepte el precio. Define límites de soporte, horario y costos externos.</div>
+</section>
+<section class="card results"><h2>Tu estimación mensual</h2><p class="sub">El cálculo se actualiza cuando cambias los campos.</p>
+<div class="pricebox"><div class="label">Cuota mensual sugerida (estimación)</div><div id="recommended" class="price">$3,900 MXN</div><div class="micro" id="rounding">Redondeada para facilitar la cotización.</div></div>
+<div class="metrics"><div class="metric"><span>Horas estimadas con reserva</span><strong id="hoursOut">6.6 h</strong></div><div class="metric"><span>Precio antes de extras</span><strong id="floorOut">$3,900</strong></div><div class="metric"><span>Costo laboral estimado</span><strong id="costOut">$2,300</strong></div><div class="metric"><span>Horas fuera del plan</span><strong id="overOut">1.6 h</strong></div></div>
+<div id="status" class="status">Revisa la carga estimada frente a las horas incluidas.</div>
+<div class="breakdown"><h3>Desglose</h3>
+<div class="line"><span>Horas rutinarias</span><strong id="routineOut">1.5 h</strong></div><div class="line"><span>Horas por incidencias</span><strong id="incidentsOut">3.0 h</strong></div><div class="line"><span>Coordinación y reporte</span><strong id="adminOut">0.8 h</strong></div><div class="line"><span>Reserva de imprevistos</span><strong id="bufferOut">1.3 h</strong></div><div class="line"><span>Costos de herramientas</span><strong id="toolsOut">$0</strong></div><div class="line"><span>Disponibilidad / SLA</span><strong id="oncallOut">$0</strong></div><div class="line"><span>Hora extra</span><strong id="overageOut">$700/h</strong></div>
+</div>
+<div class="scope"><h3>Borrador de alcance mensual</h3><textarea id="scopeText" aria-label="Borrador editable del alcance"></textarea><div class="buttons"><button class="btn" id="copyBtn" type="button">Copiar alcance</button><button class="btn secondary" id="downloadBtn" type="button">Descargar resumen .txt</button></div><p class="micro" id="copyStatus" aria-live="polite">Edita el texto y revísalo antes de incluirlo en una propuesta o contrato.</p></div>
+<p class="micro">Prototipo para planificación; no constituye asesoría fiscal, legal ni garantía comercial.</p>
+</section></div></main>
+<footer><div class="foot"><div><strong>Privacidad</strong><br>Esta versión no hace solicitudes a internet, no guarda tus entradas en un servidor y no necesita claves API. Los cálculos ocurren en el navegador.</div><div><strong>Estado del producto</strong><br>Prototipo experimental. Los supuestos iniciales deben contrastarse con horas y costos reales antes de cotizar.</div></div></footer>
+<script>
+(function(){
+ var ids=['flows','routine','incidents','incidentHours','admin','buffer','hourCost','margin','tools','oncall','included','overage','currencySelect'];
+ var el={}; ids.forEach(function(id){el[id]=document.getElementById(id);});
+ var lastSummary='';
+ function n(id){var value=Number(el[id].value);return Number.isFinite(value)?Math.max(0,value):0;}
+ function money(v){return new Intl.NumberFormat('es-MX',{style:'currency',currency:el.currencySelect.value,maximumFractionDigits:0}).format(Number.isFinite(v)?v:0);}
+ function hours(v){return v.toFixed(1)+' h';}
+ function set(id,value){document.getElementById(id).textContent=value;}
+ function update(){
+  var flows=n('flows'),routine=n('routine')*flows,incidents=n('incidents')*n('incidentHours'),admin=n('admin'),bufferPct=Math.min(200,n('buffer'))/100;
+  var base=routine+incidents+admin,buffer=base*bufferPct,total=base+buffer,cost=total*n('hourCost'),margin=Math.min(90,n('margin'))/100;
+  var tools=n('tools'),sla=n('oncall'),included=n('included'),overage=n('overage'),cur=el.currencySelect.value;
+  var floor=cost/Math.max(.01,1-margin)+sla,step=cur==='MXN'?100:5,price=Math.ceil((floor+tools)/step)*step,excess=Math.max(0,total-included);
+  document.querySelectorAll('.currency').forEach(function(e){e.textContent=cur;});
+  set('recommended',money(price));set('rounding','Redondeada al siguiente '+(cur==='MXN'?'centenar de pesos': 'bloque de 5 '+(cur==='USD'?'dólares':'euros'))+'. Los costos trasladados se suman como partida separada.');
+  set('hoursOut',hours(total));set('floorOut',money(floor));set('costOut',money(cost));set('overOut',hours(excess));
+  set('routineOut',hours(routine));set('incidentsOut',hours(incidents));set('adminOut',hours(admin));set('bufferOut',hours(buffer));set('toolsOut',money(tools));set('oncallOut',money(sla));set('overageOut',money(overage)+'/h');
+  var status=document.getElementById('status');
+  if(excess>0.01){status.className='status';status.textContent='La carga estimada supera las horas incluidas por '+hours(excess)+'. Reduce el alcance, aumenta las horas incluidas o define el excedente.';}
+  else{status.className='status good';status.textContent='La carga estimada cabe dentro de las '+hours(included)+' incluidas. Conserva la reserva si refleja tu experiencia real.';}
+  var scope=[
+   'BORRADOR — PLAN MENSUAL DE MANTENIMIENTO DE AUTOMATIZACIONES',
+   'Cuota mensual sugerida: '+money(price)+' (estimación; no es una oferta definitiva).',
+   'Incluye mantenimiento preventivo de hasta '+flows+' flujos; estimación de '+hours(total)+' mensuales considerando una reserva del '+n('buffer')+'%; coordinación y reporte.',
+   'Horas incluidas: '+hours(included)+' al mes. Trabajo adicional: '+money(overage)+' por hora, previa autorización del cliente.',
+   'Disponibilidad / SLA: '+money(sla)+' al mes, si aplica. Licencias, consumo de APIs e infraestructura se cobran por separado: '+money(tools)+' al mes.',
+   'Fuera de alcance salvo acuerdo escrito: desarrollo de funciones nuevas, migraciones mayores, cambios en sistemas externos e incidentes ajenos al control del proveedor.',
+   'Antes de usar este borrador, definir expresamente horario, severidades, tiempos de respuesta, canal de soporte, exclusiones e impuestos.'
+  ].join('\n\n');
+  document.getElementById('scopeText').value=scope;
+  lastSummary='Estimación mensual de mantenimiento\nCuota sugerida: '+money(price)+'\nHoras estimadas con reserva: '+hours(total)+'\nHoras incluidas: '+hours(included)+'\nHoras fuera del plan: '+hours(excess)+'\nCosto laboral: '+money(cost)+'\nHerramientas / infraestructura: '+money(tools)+'\nDisponibilidad / SLA: '+money(sla)+'\nHora extra: '+money(overage)+'\n\n'+scope;
+ }
+ ids.forEach(function(id){el[id].addEventListener('input',update);});
+ document.getElementById('copyBtn').addEventListener('click',function(){
+  var box=document.getElementById('scopeText');
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(box.value).then(function(){set('copyStatus','Alcance copiado.');}).catch(function(){box.select();set('copyStatus','Selecciona el texto y cópialo manualmente.');});}
+  else{box.select();set('copyStatus','Selecciona el texto y copia con Ctrl+C o Cmd+C.');}
+ });
+ document.getElementById('downloadBtn').addEventListener('click',function(){
+  var blob=new Blob([lastSummary],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=url;a.download='estimacion-mantenimiento-automatizaciones.txt';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+ });
+ update();
+})();
+</script>
+</body>
+</html>
