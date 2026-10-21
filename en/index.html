@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Estimate a monthly n8n, Make, or Zapier automation maintenance retainer. Model routine hours, incidents, overhead, margin, and support scope with a free calculator.">
+<meta name="theme-color" content="#142b49">
+<link rel="canonical" href="https://estaccato3.github.io/cuota-clara/en/">
+<link rel="alternate" hreflang="es-MX" href="https://estaccato3.github.io/cuota-clara/">
+<link rel="alternate" hreflang="en" href="https://estaccato3.github.io/cuota-clara/en/">
+<link rel="alternate" hreflang="x-default" href="https://estaccato3.github.io/cuota-clara/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Automation Maintenance Pricing Calculator | Quota Clear">
+<meta property="og:description" content="Estimate monthly hours, incident reserve, labor cost, and a maintenance retainer. Free, browser-based, no login or API keys.">
+<meta property="og:url" content="https://estaccato3.github.io/cuota-clara/en/">
+<title>Automation Maintenance Pricing Calculator | Cuota Clara</title>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Cuota Clara","url":"https://estaccato3.github.io/cuota-clara/en/","applicationCategory":"BusinessApplication","operatingSystem":"Any","inLanguage":"en","isAccessibleForFree":true,"description":"A free browser-based calculator to estimate recurring automation maintenance pricing."}
+</script>
+<style>
+:root{--ink:#15243a;--muted:#617087;--line:#dbe4ee;--paper:#f3f7fb;--blue:#215da8;--cyan:#12a4b4;--card:#fff;--pale:#eaf5fb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}header{background:linear-gradient(120deg,#142b49,#1d5790 70%,#138f9f);color:white;padding:42px 20px 64px}.wrap{max-width:1100px;margin:auto}.top{display:flex;justify-content:space-between;gap:12px;align-items:center}.lang{color:white;text-decoration:underline;text-underline-offset:3px;font-weight:700}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-weight:800;font-size:.76rem;opacity:.84}h1{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.12;max-width:780px;margin:12px 0}header p{max-width:750px;color:#e0ebf8;margin:0;font-size:1.05rem}.pill{display:inline-block;border:1px solid #ffffff66;border-radius:999px;padding:6px 11px;font-size:.82rem;margin-top:18px}main{max-width:1100px;margin:-30px auto 30px;padding:0 16px}.layout{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 30px #132a4a12;padding:22px}.card h2{font-size:1.2rem;margin:0 0 6px}.sub{font-size:.9rem;color:var(--muted);margin:0 0 17px}.section{border-top:1px solid var(--line);padding-top:16px;margin-top:14px}.section h3{font-size:.86rem;text-transform:uppercase;letter-spacing:.07em;color:#40536d;margin:0 0 12px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field label{display:block;font-size:.85rem;font-weight:700;margin-bottom:6px}.field input,.field select{width:100%;padding:10px;border:1px solid #cbd6e2;border-radius:9px;font:inherit;background:white;color:var(--ink)}.field small{display:block;color:var(--muted);font-size:.75rem;margin-top:5px}.suffix{position:relative}.suffix input{padding-right:48px}.suffix span{position:absolute;right:10px;top:10px;color:var(--muted);font-size:.82rem}.full{grid-column:1/-1}.note{background:var(--pale);border:1px solid #cfe1f2;border-radius:11px;padding:12px;font-size:.84rem;margin-top:15px}.results{position:sticky;top:15px}.pricebox{border:1px solid #c5e3e9;border-radius:15px;background:linear-gradient(140deg,#eff8ff,#effbfa);padding:20px}.label{font-size:.83rem;font-weight:700;color:#40536d}.price{font-size:clamp(2.1rem,4.5vw,3rem);font-weight:850;line-height:1.2;color:#164b79;margin:8px 0}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.metric,.line{border-bottom:1px solid #edf1f5;padding:9px 0}.metric{border:1px solid var(--line);border-radius:11px;padding:12px}.metric span{display:block;color:var(--muted);font-size:.77rem}.metric strong{display:block;font-size:1.15rem;margin-top:4px}.status{margin-top:12px;border-radius:10px;padding:11px;font-size:.84rem;background:#fff4df;color:#8a5207}.status.good{background:#e8f7ef;color:#13795b}.breakdown{margin-top:19px}.breakdown h3,.scope h3{font-size:.9rem;margin:0 0 8px}.line{display:flex;justify-content:space-between;gap:12px;font-size:.85rem}.line span{color:var(--muted)}.line strong{text-align:right}.scope{margin-top:18px}.scope textarea{width:100%;min-height:175px;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit;font-size:.82rem;resize:vertical}.buttons{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}.btn{border:0;border-radius:9px;padding:10px 13px;background:var(--blue);color:white;font-weight:750;cursor:pointer}.btn.secondary{background:white;color:var(--blue);border:1px solid #cbd6e2}.micro{font-size:.77rem;color:var(--muted)}.seo{max-width:1100px;margin:24px auto;background:white;border:1px solid var(--line);border-radius:17px;padding:24px}.seo h2{margin-top:0}.seo a{color:var(--blue);font-weight:750}@media(max-width:780px){.layout{grid-template-columns:1fr}.results{position:static}}@media(max-width:490px){.fields,.metrics{grid-template-columns:1fr}.card{padding:17px}header{padding:30px 18px 52px}.top{align-items:flex-start}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="top"><div class="eyebrow">Free tool · Experimental MVP</div><a class="lang" href="../" lang="es">Español</a></div><h1>How much should you charge for automation maintenance?</h1><p>Estimate monthly hours, incident overhead, labor cost, and a recurring maintenance retainer for n8n, Make, Zapier, and similar workflow tools.</p><span class="pill">Runs in your browser · No login · No API keys</span></div></header>
+<main><div class="layout">
+<section class="card"><h2>Configure your service</h2><p class="sub">Change every assumption to match your own workload. Defaults are examples, not market benchmarks.</p>
+<div class="section"><h3>Monthly maintenance workload</h3><div class="fields">
+<div class="field"><label for="flows">Workflows in production</label><input id="flows" type="number" min="0" max="1000" step="1" value="3"></div>
+<div class="field"><label for="routine">Routine hours per workflow / month</label><input id="routine" type="number" min="0" max="500" step=".25" value=".5"><small>Health checks, small updates, and monitoring.</small></div>
+<div class="field"><label for="incidents">Expected incidents per month</label><input id="incidents" type="number" min="0" max="500" step=".5" value="2"></div>
+<div class="field"><label for="incidentHours">Average hours per incident</label><input id="incidentHours" type="number" min="0" max="500" step=".25" value="1.5"></div>
+<div class="field"><label for="admin">Coordination and reporting (hours/month)</label><input id="admin" type="number" min="0" max="500" step=".25" value=".75"></div>
+<div class="field"><label for="buffer">Incident reserve</label><div class="suffix"><input id="buffer" type="number" min="0" max="200" step="5" value="25"><span>%</span></div></div>
+</div></div>
+<div class="section"><h3>Cost and pricing</h3><div class="fields">
+<div class="field"><label for="hourCost">Internal cost per hour</label><div class="suffix"><input id="hourCost" type="number" min="0" step="5" value="60"><span class="currency">USD</span></div></div>
+<div class="field"><label for="margin">Target gross margin</label><div class="suffix"><input id="margin" type="number" min="0" max="90" step="5" value="40"><span>%</span></div></div>
+<div class="field"><label for="tools">Tools and infrastructure passed through</label><div class="suffix"><input id="tools" type="number" min="0" step="5" value="0"><span class="currency">USD</span></div><small>Costs billed separately to the client.</small></div>
+<div class="field"><label for="oncall">Priority availability / SLA fee</label><div class="suffix"><input id="oncall" type="number" min="0" step="5" value="0"><span class="currency">USD</span></div><small>Optional; only if this service is offered.</small></div>
+<div class="field"><label for="included">Hours included in the plan</label><input id="included" type="number" min="0" step=".5" value="5"></div>
+<div class="field"><label for="overage">Additional hourly rate</label><div class="suffix"><input id="overage" type="number" min="0" step="5" value="100"><span class="currency">USD</span></div></div>
+<div class="field full"><label for="currencySelect">Currency</label><select id="currencySelect"><option value="USD" selected>USD · US dollars</option><option value="EUR">EUR · Euros</option><option value="MXN">MXN · Mexican pesos</option></select></div>
+</div></div>
+<div class="note"><strong>Important:</strong> this estimate depends on your own inputs. It excludes taxes and does not guarantee profitability or customer acceptance. Define support hours, incident response, and third-party costs explicitly.</div>
+</section>
+<section class="card results"><h2>Your monthly estimate</h2><p class="sub">The result updates as you change inputs.</p>
+<div class="pricebox"><div class="label">Suggested monthly retainer (estimate)</div><div id="recommended" class="price">$900</div><div class="micro" id="rounding">Rounded for easier quoting.</div></div>
+<div class="metrics"><div class="metric"><span>Estimated hours with reserve</span><strong id="hoursOut">6.6 h</strong></div><div class="metric"><span>Labor price before extras</span><strong id="floorOut">$900</strong></div><div class="metric"><span>Estimated labor cost</span><strong id="costOut">$600</strong></div><div class="metric"><span>Hours beyond included plan</span><strong id="overOut">1.6 h</strong></div></div>
+<div id="status" class="status">Review estimated workload against included hours.</div>
+<div class="breakdown"><h3>Breakdown</h3>
+<div class="line"><span>Routine hours</span><strong id="routineOut">1.5 h</strong></div><div class="line"><span>Incident hours</span><strong id="incidentsOut">3.0 h</strong></div><div class="line"><span>Coordination and reporting</span><strong id="adminOut">0.8 h</strong></div><div class="line"><span>Incident reserve</span><strong id="bufferOut">1.3 h</strong></div><div class="line"><span>Tools and infrastructure</span><strong id="toolsOut">$0</strong></div><div class="line"><span>Priority availability / SLA</span><strong id="oncallOut">$0</strong></div><div class="line"><span>Extra hour</span><strong id="overageOut">$100/h</strong></div>
+</div>
+<div class="scope"><h3>Draft monthly scope</h3><textarea id="scopeText" aria-label="Editable maintenance scope draft"></textarea><div class="buttons"><button class="btn" id="copyBtn" type="button">Copy scope</button><button class="btn secondary" id="downloadBtn" type="button">Download summary .txt</button></div><p class="micro" id="copyStatus" aria-live="polite">Edit and review this text before using it in a proposal or agreement.</p></div>
+<p class="micro">Planning prototype only; not tax, legal, or pricing advice and no guarantee of profitability.</p>
+</section></div>
+<section class="seo"><h2>How to price automation maintenance</h2>
+<p>A monthly retainer should reflect the work that actually needs to be done—not just the number of workflows. Estimate routine checks, likely incidents, coordination time, and a realistic reserve. Then calculate the labor price from your own cost and target gross margin.</p>
+<p>Be explicit about the workflows covered, included hours, support hours, response targets, third-party costs, and changes outside the plan. A monthly maintenance fee does not automatically include 24/7 availability or new feature development.</p>
+<p>See the <a href="n8n-maintenance-pricing.html">step-by-step guide to pricing n8n maintenance</a>, or switch back to the <a href="../">Spanish calculator</a>.</p></section>
+</main>
+<footer class="wrap" style="padding:0 16px 30px;color:var(--muted);font-size:.79rem">Cuota Clara · Experimental tool. The default values are illustrative and have not been validated as market rates.</footer>
+<script>
+(function(){
+ var ids=['flows','routine','incidents','incidentHours','admin','buffer','hourCost','margin','tools','oncall','included','overage','currencySelect'];var el={};ids.forEach(function(id){el[id]=document.getElementById(id);});
+ var lastSummary='';
+ function n(id){var v=Number(el[id].value);return Number.isFinite(v)?Math.max(0,v):0;}
+ function money(v){return new Intl.NumberFormat('en-US',{style:'currency',currency:el.currencySelect.value,maximumFractionDigits:0}).format(Number.isFinite(v)?v:0);}
+ function hrs(v){return v.toFixed(1)+' h';}function set(id,v){document.getElementById(id).textContent=v;}
+ function update(){
+  var flows=n('flows'),routine=n('routine')*flows,incidents=n('incidents')*n('incidentHours'),admin=n('admin'),reserve=Math.min(200,n('buffer'))/100;
+  var base=routine+incidents+admin,buffer=base*reserve,total=base+buffer,cost=total*n('hourCost'),margin=Math.min(90,n('margin'))/100;
+  var tools=n('tools'),sla=n('oncall'),included=n('included'),overage=n('overage'),cur=el.currencySelect.value;
+  var floor=cost/Math.max(.01,1-margin)+sla,step=cur==='MXN'?100:cur==='USD'?25:20,price=Math.ceil((floor+tools)/step)*step,excess=Math.max(0,total-included);
+  document.querySelectorAll('.currency').forEach(function(e){e.textContent=cur;});
+  set('recommended',money(price));set('rounding','Rounded to the next '+(cur==='MXN'?'100 MXN':'pricing increment')+'. Third-party costs are added separately.');
+  set('hoursOut',hrs(total));set('floorOut',money(floor));set('costOut',money(cost));set('overOut',hrs(excess));
+  set('routineOut',hrs(routine));set('incidentsOut',hrs(incidents));set('adminOut',hrs(admin));set('bufferOut',hrs(buffer));set('toolsOut',money(tools));set('oncallOut',money(sla));set('overageOut',money(overage)+'/h');
+  var status=document.getElementById('status');if(excess>.01){status.className='status';status.textContent='Estimated workload exceeds included hours by '+hrs(excess)+'. Reduce scope, include more hours, or define how overages are approved.';}else{status.className='status good';status.textContent='Estimated workload fits within the '+hrs(included)+' included. Keep the reserve if it reflects your real experience.';}
+  var scope=['DRAFT — MONTHLY AUTOMATION MAINTENANCE PLAN','Suggested monthly retainer: '+money(price)+' (estimate, not a final offer).','Includes preventive maintenance for up to '+flows+' workflows, estimated '+hrs(total)+' per month including a '+n('buffer')+'% reserve, coordination and reporting.','Included hours: '+hrs(included)+' per month. Additional work: '+money(overage)+' per hour, with prior client approval.','Priority availability / SLA: '+money(sla)+' per month, if applicable. Licenses, API usage and infrastructure are passed through separately: '+money(tools)+' per month.','Out of scope unless agreed in writing: new features, major migrations, third-party platform changes and issues outside provider control.','Before using this draft, specify service hours, incident severity, response targets, support channels, exclusions and taxes.'].join('\n\n');
+  document.getElementById('scopeText').value=scope;lastSummary='Automation maintenance estimate\nSuggested retainer: '+money(price)+'\nEstimated hours with reserve: '+hrs(total)+'\nIncluded hours: '+hrs(included)+'\nHours beyond plan: '+hrs(excess)+'\nLabor cost: '+money(cost)+'\nTools / infrastructure: '+money(tools)+'\nPriority availability / SLA: '+money(sla)+'\nExtra hourly rate: '+money(overage)+'\n\n'+scope;
+ }
+ ids.forEach(function(id){el[id].addEventListener('input',update);});
+ document.getElementById('copyBtn').addEventListener('click',function(){var box=document.getElementById('scopeText');if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(box.value).then(function(){set('copyStatus','Scope copied.');}).catch(function(){box.select();set('copyStatus','Select the text and copy it manually.');});}else{box.select();set('copyStatus','Select the text and copy with Ctrl+C or Cmd+C.');}});
+ document.getElementById('downloadBtn').addEventListener('click',function(){var blob=new Blob([lastSummary],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='automation-maintenance-estimate.txt';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);});
+ update();
+})();
+</script>
+</body></html>
