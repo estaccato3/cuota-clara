@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Cuota Clara Search Console Monitor es un script privado de Google Apps Script que genera informes de indexación y rendimiento para el propietario del sitio.">
+<meta name="robots" content="noindex,follow">
+<title>Cuota Clara Search Console Monitor</title>
+<style>
+:root{--ink:#15243a;--muted:#617087;--line:#dbe4ee;--paper:#f3f7fb;--blue:#215da8;--cyan:#12a4b4}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}.hero{background:linear-gradient(120deg,#142b49,#1d5790 70%,#138f9f);color:white;padding:48px 20px}.wrap{max-width:850px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.77rem;font-weight:800;opacity:.85}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:12px 0}.hero p{max-width:720px;color:#e1edf8}.pill{display:inline-block;padding:5px 10px;border:1px solid #ffffff77;border-radius:99px;font-size:.8rem}main{max-width:850px;margin:24px auto;padding:0 16px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:clamp(20px,4vw,34px);margin-bottom:18px}.card h2{margin-top:0}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.tile{border:1px solid var(--line);border-radius:12px;padding:15px}.tile a{color:var(--blue);font-weight:750}.muted,footer{color:var(--muted);font-size:.88rem}footer{max-width:850px;margin:auto;padding:0 16px 32px}@media(max-width:560px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap"><div class="eyebrow">Herramienta privada · Cuota Clara</div><h1>Search Console Monitor</h1><p>Un script personal de Google Apps Script que prepara informes periódicos sobre la disponibilidad de las páginas públicas de Cuota Clara, el estado conocido de indexación, el sitemap y las métricas de búsqueda de Google Search Console.</p><span class="pill">Solo lectura de Search Console · Informes al propietario</span></div></header>
+<main>
+<section class="card"><h2>Qué hace el monitor</h2>
+<p>El monitor consulta la API de Google Search Console para revisar cuatro páginas de Cuota Clara, lee el registro del sitemap, comprueba que las páginas públicas respondan y obtiene métricas agregadas de clics, impresiones, CTR, posición y consultas. Después envía el informe a la dirección de correo configurada por el propietario.</p>
+<p>El monitor no solicita indexación, no modifica páginas ni sitemaps, no publica los datos, no conecta cuentas de otros usuarios y no está diseñado para ofrecer un servicio a terceros. La inspección API refleja el estado que Google conoce; no sustituye la prueba de URL publicada en Search Console.</p>
+<p class="muted">Este proyecto es una utilidad personal experimental, sin cobro ni garantía de resultados de búsqueda.</p></section>
+<section class="card"><h2>Privacidad y condiciones</h2><div class="cards">
+<div class="tile"><h3>Política de privacidad</h3><p>Describe los datos de Search Console que se consultan, cómo se usan en los informes y qué tratamiento reciben.</p><a href="./privacy.html">Leer política de privacidad →</a></div>
+<div class="tile"><h3>Términos de uso</h3><p>Define el uso previsto del monitor, sus límites y las responsabilidades del propietario.</p><a href="./terms.html">Leer términos de uso →</a></div>
+</div></section>
+</main>
+<footer>Cuota Clara · <a href="../">Calculadora pública</a> · Última actualización: 21 de octubre de 2026.</footer>
+</body>
+</html>
