@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A practical framework for pricing n8n automation maintenance: estimate routine work, incidents, reserve, labor cost, gross margin, SLA, and scope.">
+<link rel="canonical" href="https://estaccato3.github.io/cuota-clara/en/n8n-maintenance-pricing.html">
+<link rel="alternate" hreflang="es-MX" href="https://estaccato3.github.io/cuota-clara/guia-mantenimiento-n8n.html">
+<link rel="alternate" hreflang="en" href="https://estaccato3.github.io/cuota-clara/en/n8n-maintenance-pricing.html">
+<link rel="alternate" hreflang="x-default" href="https://estaccato3.github.io/cuota-clara/guia-mantenimiento-n8n.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Price n8n Automation Maintenance | Cuota Clara">
+<meta property="og:description" content="Estimate a monthly retainer from workload, incident reserve, internal cost, margin, and a clearly defined support scope.">
+<meta property="og:url" content="https://estaccato3.github.io/cuota-clara/en/n8n-maintenance-pricing.html">
+<title>How to Price n8n Automation Maintenance | Cuota Clara</title>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How to Price n8n Automation Maintenance","inLanguage":"en","mainEntityOfPage":"https://estaccato3.github.io/cuota-clara/en/n8n-maintenance-pricing.html","author":{"@type":"Organization","name":"Cuota Clara"},"publisher":{"@type":"Organization","name":"Cuota Clara"},"datePublished":"2026-10-21","dateModified":"2026-10-21"}
+</script>
+<style>
+:root{--ink:#15243a;--muted:#617087;--line:#dbe4ee;--paper:#f3f7fb;--blue:#215da8;--cyan:#12a4b4;--pale:#eaf5fb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.72 system-ui,-apple-system,"Segoe UI",sans-serif}.hero{background:linear-gradient(120deg,#142b49,#1d5790 70%,#138f9f);color:white;padding:34px 20px 42px}.wrap{max-width:880px;margin:auto}.top{display:flex;justify-content:space-between;gap:12px;align-items:center}.top a{color:white;font-weight:750;text-underline-offset:3px}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:800;opacity:.85}.hero h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.12;letter-spacing:-.03em;margin:12px 0}.hero p{max-width:750px;color:#e1edf8;font-size:1.07rem;margin:0}.pill{display:inline-block;border:1px solid #ffffff66;border-radius:999px;padding:5px 10px;font-size:.8rem;margin-top:17px}main{max-width:880px;margin:24px auto 42px;padding:0 16px}.article{background:white;border:1px solid var(--line);border-radius:17px;padding:clamp(20px,4vw,42px);box-shadow:0 12px 30px #132a4a0b}.lead{font-size:1.15rem;color:#364b65}.note{border-left:4px solid var(--cyan);background:var(--pale);padding:13px 16px;margin:20px 0;border-radius:0 10px 10px 0;font-size:.94rem}.article h2{font-size:1.55rem;line-height:1.25;margin:35px 0 10px}.article h3{font-size:1.12rem;margin:22px 0 6px}.article p{margin:10px 0}.article li{margin:6px 0}.article a{color:var(--blue);text-underline-offset:3px}.formula{background:#132b47;color:#fff;border-radius:12px;padding:17px;margin:17px 0;font-weight:750;font-size:1.02rem;overflow-wrap:anywhere}.table-wrap{overflow-x:auto;margin:15px 0}table{border-collapse:collapse;width:100%;font-size:.94rem}th,td{text-align:left;padding:10px 11px;border-bottom:1px solid var(--line)}th{background:#f0f5fa}.cta{margin:25px 0;padding:23px;background:linear-gradient(135deg,#eaf5fb,#effbfa);border:1px solid #cde3ee;border-radius:13px}.btn{display:inline-block;margin-top:8px;background:var(--blue);color:white!important;text-decoration:none;font-weight:800;border-radius:9px;padding:11px 15px}.muted{color:var(--muted);font-size:.88rem}.faq{border-top:1px solid var(--line);padding:13px 0}.faq h3{margin:0 0 5px}.faq p{margin:0}footer{max-width:880px;margin:auto;padding:0 16px 30px;color:var(--muted);font-size:.8rem}@media(max-width:500px){body{font-size:16px}.hero{padding:28px 18px 36px}.article{padding:19px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap"><div class="top"><a href="./">← Back to calculator</a><a href="../guia-mantenimiento-n8n.html" lang="es">Español</a></div><div class="eyebrow">Practical guide · Freelancers and small agencies</div><h1>How much should you charge for n8n automation maintenance?</h1><p>A transparent framework for estimating monthly hours, incidents, margin, and the limits of your support plan.</p><span class="pill">Illustrative example · October 21, 2026</span></div></header>
+<main><article class="article">
+<p class="lead">Automation maintenance is more than checking whether a workflow is running. Work may include reviewing executions, diagnosing failures, updating credentials or integrations, handling platform changes, and communicating with the client.</p>
+<p>A recurring price based only on the number of workflows can miss that variability. Estimate workload explicitly, calculate a cost-based floor, define the service boundary, and then compare your assumptions with the time you actually spend.</p>
+<div class="note"><strong>Transparency:</strong> every number in this guide is an illustrative calculation, not a market average or a guarantee that a client will accept the price. Adjust assumptions to your service, location, experience, and support commitments.</div>
+<h2>1. Break the workload into categories</h2>
+<ul>
+<li><strong>Routine checks:</strong> review execution status, alerts, logs, and integration health.</li>
+<li><strong>Incidents:</strong> estimate likely incidents per month and the average time needed to diagnose and fix each one.</li>
+<li><strong>Coordination:</strong> reporting, meetings, messages, deployments, and change management.</li>
+<li><strong>Incident reserve:</strong> a stated buffer for variation. It is not a replacement for scope limits or an unlimited incident promise.</li>
+</ul>
+<p>Use your own execution history wherever possible. A stable workflow may need very little attention; a critical automation dependent on several external APIs can require much more.</p>
+<h2>2. Estimate monthly hours</h2>
+<div class="formula">Hours with reserve = (routine hours + incident hours + coordination) × (1 + reserve percentage)</div>
+<p>Illustrative example for four workflows:</p>
+<div class="table-wrap"><table><thead><tr><th>Component</th><th>Assumption</th><th>Hours/month</th></tr></thead><tbody>
+<tr><td>Routine checks</td><td>4 workflows × 0.5 hour</td><td>2.0</td></tr>
+<tr><td>Incidents</td><td>2 incidents × 1.5 hours</td><td>3.0</td></tr>
+<tr><td>Coordination and reporting</td><td>Estimate</td><td>1.0</td></tr>
+<tr><td>Subtotal</td><td>Before reserve</td><td>6.0</td></tr>
+<tr><td>Incident reserve</td><td>25% of subtotal</td><td>1.5</td></tr>
+<tr><td><strong>Total estimate</strong></td><td>6.0 × 1.25</td><td><strong>7.5</strong></td></tr>
+</tbody></table></div>
+<h2>3. Turn cost into a price</h2>
+<p>Estimate your internal cost per hour, including the time and overhead required to provide the service. Then use the target gross margin rather than an arbitrary markup.</p>
+<div class="formula">Labor price = estimated labor cost ÷ (1 − target gross margin)</div>
+<p>For example, 7.5 estimated hours at an internal cost of $60/hour means $450 in labor cost. With a 40% gross margin target, the labor price is $450 ÷ 0.60 = <strong>$750</strong>. The currency is illustrative, and third-party expenses are not included in this calculation.</p>
+<p>Margin and markup are not the same. Multiplying $450 by 1.4 gives $630, which does not produce a 40% gross margin.</p>
+<div class="note">The $60/hour, 40% margin, and 7.5-hour assumptions are examples used to demonstrate the formula, not a recommended market price.</div>
+<h2>4. Keep external costs and service levels explicit</h2>
+<ul>
+<li><strong>Hosting, licenses, and API usage:</strong> bill them separately or include them deliberately; do not count the same cost twice.</li>
+<li><strong>Priority availability or SLA:</strong> price it only if you can define and meet the coverage hours, severity levels, and response targets.</li>
+<li><strong>Extra hours:</strong> set a rate and approval process before work exceeds the included hours.</li>
+<li><strong>New development:</strong> features, major migrations, and changes in business scope may require a separate quote.</li>
+</ul>
+<h2>5. Define the support scope</h2>
+<p>Before a client signs, document which workflows are covered, what routine work is included, how hours are tracked, support hours and channels, incident severity, response targets, exclusions, and who approves third-party spending. A monthly retainer does not automatically include 24/7 coverage.</p>
+<div class="cta"><h2 style="margin-top:0">Calculate your own maintenance retainer</h2><p>Enter your workflow count, routine hours, incidents, internal cost, margin, and included hours. The calculator also produces an editable scope draft.</p><a class="btn" href="./">Open the free maintenance calculator →</a><p class="muted">Works in your browser; no account or API keys required.</p></div>
+<h2>Frequently asked questions</h2>
+<div class="faq"><h3>How much should I charge per n8n workflow?</h3><p>There is no universal price. Workload, criticality, external dependencies, incident history, scope, and response-time commitments matter more than workflow count alone.</p></div>
+<div class="faq"><h3>Should hosting and API usage be included?</h3><p>That depends on the agreement. Show those costs explicitly and avoid counting the same expense in both the retainer and a separate charge.</p></div>
+<div class="faq"><h3>What if incidents exceed the estimate?</h3><p>Use actual time records to recalibrate the plan and follow the agreed change process for out-of-scope work. Define approval for extra hours before they are needed.</p></div>
+<div class="faq"><h3>Does this calculator provide market rates?</h3><p>No. It calculates from your own assumptions. Its defaults are illustrative and are not based on a survey of market rates.</p></div>
+<h2>Summary</h2><p>A sustainable maintenance retainer starts with realistic hours, a stated incident reserve, labor cost, a margin target, and clear boundaries. Track actual work and adjust the estimate based on evidence rather than assumptions that are never reviewed.</p><p class="muted">Educational content only; not tax, legal, or financial advice and no guarantee of profitability.</p>
+</article></main>
+<footer>Cuota Clara · <a href="./">Calculator</a> · Experimental project; demand and revenue have not been validated.</footer>
+</body></html>
