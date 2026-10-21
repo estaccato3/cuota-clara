@@ -1,0 +1,91 @@
+PLANTILLA DE ALCANCE — MANTENIMIENTO DE AUTOMATIZACIONES
+Cuota Clara · Documento de trabajo editable
+Versión: 1.0
+
+INSTRUCCIONES
+Completa los campos con el cliente antes de cotizar. Esta plantilla es una lista de verificación operativa, no un contrato ni asesoría legal. Los tiempos de respuesta son compromisos que tú defines; no uses valores que no puedas cumplir.
+
+1. DATOS DEL SERVICIO
+Cliente / empresa:
+Proveedor:
+Fecha de inicio:
+Fecha de revisión:
+Plataforma principal (n8n, Make, Zapier u otra):
+Entornos incluidos (producción, pruebas):
+Persona responsable del lado del cliente:
+Canal oficial para solicitar soporte:
+
+2. AUTOMATIZACIONES CUBIERTAS
+Para cada flujo, registra nombre, propósito, propietario, criticidad y dependencias:
+- Flujo 1:
+- Flujo 2:
+- Flujo 3:
+- Flujos adicionales:
+Documentación y acceso disponibles:
+Procedimiento de respaldo o recuperación:
+
+3. MANTENIMIENTO PREVENTIVO INCLUIDO
+Marca lo que realmente ofrecerás:
+[ ] Revisión periódica del estado de ejecuciones
+[ ] Revisión de errores y alertas
+[ ] Comprobación de integraciones y credenciales (sin compartir secretos por canales inseguros)
+[ ] Revisión de cambios relevantes en APIs o sistemas conectados
+[ ] Ajustes menores definidos por escrito
+[ ] Reporte mensual
+[ ] Otro:
+Frecuencia de cada tarea:
+Qué NO está incluido:
+
+4. HORAS Y FACTURACIÓN
+Cuota mensual:
+Horas incluidas por periodo:
+Cómo se registran las horas:
+Tarifa para horas adicionales:
+¿Se requiere autorización antes de exceder las horas incluidas?:
+¿Las horas no utilizadas se acumulan?:
+Licencias, hosting, infraestructura y consumo de APIs: [ ] incluidos [ ] facturados por separado
+Otros costos externos y quién los autoriza:
+
+5. INCIDENTES Y NIVELES DE SERVICIO
+Define los niveles según la operación y el acuerdo. No prometas una guardia ni atención permanente si no puedes ofrecerla.
+Severidad crítica — definición:
+Horario de cobertura:
+Tiempo objetivo de primera respuesta:
+Canal de escalación:
+Severidad alta — definición:
+Tiempo objetivo de primera respuesta:
+Severidad normal — definición:
+Tiempo objetivo de primera respuesta:
+¿Hay guardia fuera de horario?:
+Qué se considera resolución y qué solo es primera respuesta:
+
+6. CAMBIOS FUERA DE ALCANCE
+Salvo acuerdo escrito, considerar cotización aparte:
+- Nuevas automatizaciones o funcionalidades.
+- Migraciones de plataforma o rediseños sustanciales.
+- Cambios solicitados por sistemas externos o proveedores.
+- Limpieza/corrección masiva de datos.
+- Incidencias causadas por infraestructura o credenciales que no administra el proveedor.
+- Soporte fuera del horario contratado.
+Otros límites específicos:
+
+7. RESPONSABILIDADES DEL CLIENTE
+- Proporcionar accesos mínimos necesarios y mantenerlos vigentes.
+- Designar un responsable para autorizar cambios y gastos.
+- Avisar de modificaciones hechas por terceros.
+- Mantener licencias y cuentas externas activas cuando le corresponda.
+- Validar cambios que afecten procesos de negocio.
+Responsabilidades adicionales:
+
+8. REPORTE Y REVISIÓN DEL PLAN
+Contenido del reporte mensual:
+Día o periodo de entrega:
+Revisión de consumo de horas:
+Criterio para ajustar la cuota:
+Proceso para solicitar cambios de alcance:
+Fecha de siguiente revisión:
+
+9. ACEPTACIÓN DEL BORRADOR
+Este documento debe revisarse y ajustarse para cada cliente. La aceptación final, las obligaciones, los impuestos, la jurisdicción y las condiciones legales deben definirse en el acuerdo correspondiente.
+
+Notas:
